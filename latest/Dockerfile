@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM resin/raspberrypi-buildpack-deps:jessie
 
 RUN apt-get update && apt-get install sudo -y \
  && curl -sSf https://static.rust-lang.org/rustup.sh | sh \
